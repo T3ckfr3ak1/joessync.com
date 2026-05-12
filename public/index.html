@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joe'sSync — Configurable Folder Synchronization</title>
+  <meta name="description" content="Configurable one- and two-way folder synchronization for Windows and Android. Multiple sync modes, scheduling, folder watch, and more." />
+  <meta property="og:title" content="Joe'sSync — Folder Sync for Windows & Android" />
+  <meta property="og:description" content="Configurable one- and two-way folder synchronization. Backup, mirror, two-way merge, and move modes with scheduling, profiles, and bandwidth controls." />
+  <meta property="og:url" content="https://joessync.com" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="/icon.png" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Joe's<span class="accent">Sync</span>™</a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#platforms">Platforms</a>
+        <a href="#download" class="btn btn-sm">Download</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <p class="hero-eyebrow">Folder Sync for Windows &amp; Android</p>
+      <h1 class="hero-title">Sync your files,<br><span class="accent">your way.</span></h1>
+      <p class="hero-sub">
+        Joe'sSync™ gives you precise, configurable control over how, when, and where your files sync — backup, mirror, two-way merge, or move. No cloud required.
+      </p>
+      <div class="hero-actions">
+        <a href="#download" class="btn btn-primary">Download Free</a>
+        <a href="#features" class="btn btn-ghost">See features</a>
+      </div>
+      <div class="hero-badges">
+        <span class="badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          Windows 10/11
+        </span>
+        <span class="badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="2" width="10" height="20" rx="2"/><circle cx="12" cy="18" r="1" fill="currentColor"/></svg>
+          Android
+        </span>
+        <span class="badge badge-free">Free &amp; No Account Needed</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sync Modes -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Four sync modes</h2>
+        <p class="section-sub">Pick the behavior that fits your workflow. Switch at any time.</p>
+      </div>
+      <div class="modes-grid">
+        <div class="mode-card">
+          <div class="mode-icon icon-backup">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          </div>
+          <h3>One-Way Backup</h3>
+          <p>Copy newer and missing files to the destination. The destination is never trimmed — safe for incremental backups.</p>
+        </div>
+        <div class="mode-card">
+          <div class="mode-icon icon-mirror">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg>
+          </div>
+          <h3>One-Way Mirror</h3>
+          <p>Make the destination an exact mirror of the source. Optionally remove orphaned files so both sides stay identical.</p>
+        </div>
+        <div class="mode-card">
+          <div class="mode-icon icon-twoway">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 16V4m0 0L3 8m4-4 4 4"/><path d="M17 8v12m0 0 4-4m-4 4-4-4"/></svg>
+          </div>
+          <h3>Two-Way Merge</h3>
+          <p>Sync changes in both directions by last-write time. Conflicts are handled by overwrite or safe move to a trash folder.</p>
+        </div>
+        <div class="mode-card">
+          <div class="mode-icon icon-move">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="5 9 2 12 5 15"/><polyline points="9 5 12 2 15 5"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/></svg>
+          </div>
+          <h3>One-Way Move</h3>
+          <p>Copy files, verify integrity, then delete the originals. Resume-safe so interrupted moves don't lose data.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Details -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="features-layout">
+
+        <div class="feature-block">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          </div>
+          <div>
+            <h3>Multiple Profiles</h3>
+            <p>Create up to 20 named profiles, each with its own source, destination, mode, filters, and automation settings. Switch between jobs in one click.</p>
+          </div>
+        </div>
+
+        <div class="feature-block">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <h3>Scheduling &amp; Folder Watch</h3>
+            <p>Run syncs on a daily time schedule or trigger automatically when files change. Live folder watch includes configurable quiet periods and byte thresholds.</p>
+          </div>
+        </div>
+
+        <div class="feature-block">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+          </div>
+          <div>
+            <h3>Filters &amp; Exclusions</h3>
+            <p>Exclude files and folders by pattern. Add an allowlist to sync only what matters. Optional temp-file heuristics keep partial downloads out of your backup.</p>
+          </div>
+        </div>
+
+        <div class="feature-block">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h3>SHA-256 Manifests</h3>
+            <p>Optionally generate per-folder SHA-256 hash manifests after every sync. Verify your backup is byte-for-byte correct at any time.</p>
+          </div>
+        </div>
+
+        <div class="feature-block">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div>
+            <h3>Performance Controls</h3>
+            <p>Dial in concurrent file copies (1–32), buffer size, and bandwidth cap in MiB/s. Run at below-normal thread priority to stay out of your way.</p>
+          </div>
+        </div>
+
+        <div class="feature-block">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <div>
+            <h3>Analyze Before You Sync</h3>
+            <p>Run Analyze to preview exactly which files would be copied, moved, or deleted — before a single byte changes. Stop after any file for granular control.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Platforms -->
+  <section class="section" id="platforms">
+    <div class="container">
+      <div class="section-header">
+        <h2>Available on your platforms</h2>
+        <p class="section-sub">The same sync logic and familiar workflow, wherever your files live.</p>
+      </div>
+      <div class="platforms-grid">
+        <div class="platform-card platform-windows">
+          <div class="platform-header">
+            <svg class="platform-logo" width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
+            <div>
+              <h3>Windows</h3>
+              <p class="platform-sub">v1.7.12 — Windows 10 &amp; 11 (64-bit)</p>
+            </div>
+          </div>
+          <ul class="platform-features">
+            <li>WPF native UI with dark &amp; light themes</li>
+            <li>Local, mapped drives, and UNC paths</li>
+            <li>System tray, run on idle, task scheduler</li>
+            <li>Profile import/export with encryption</li>
+          </ul>
+          <a href="#download" class="btn btn-primary platform-btn">Download for Windows</a>
+        </div>
+        <div class="platform-card platform-android">
+          <div class="platform-header">
+            <svg class="platform-logo" width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.341a.985.985 0 0 1-.99.98.985.985 0 0 1-.99-.98V9.25a.985.985 0 0 1 .99-.98.985.985 0 0 1 .99.98v6.091zm-10.06 0a.985.985 0 0 1-.99.98.985.985 0 0 1-.99-.98V9.25a.985.985 0 0 1 .99-.98.985.985 0 0 1 .99.98v6.091zm11.91-6.33c0-.017 0-.033-.002-.05a6.044 6.044 0 0 0-2.43-4.305l.98-1.75a.45.45 0 0 0-.78-.438l-.992 1.771a6.037 6.037 0 0 0-2.149-.56V4h.64V2.5h-3.28V4h.64v-.322a6.038 6.038 0 0 0-2.149.56L8.86 2.467a.45.45 0 0 0-.78.438l.979 1.75A6.044 6.044 0 0 0 6.63 9.011c-.002.017-.002.033-.002.05v8.47c0 .816.67 1.479 1.495 1.479H15.88c.825 0 1.495-.663 1.495-1.479V9.011z"/></svg>
+            <div>
+              <h3>Android</h3>
+              <p class="platform-sub">v1.7.4 — Android 8.0+</p>
+            </div>
+          </div>
+          <ul class="platform-features">
+            <li>Material 3 Compose UI</li>
+            <li>Google Drive, OneDrive, local storage</li>
+            <li>Dropbox &amp; other document providers</li>
+            <li>Same powerful sync modes as Windows</li>
+          </ul>
+          <a href="#download" class="btn btn-secondary platform-btn">Download for Android</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download -->
+  <section class="section section-cta" id="download">
+    <div class="container">
+      <h2>Free to use. No subscription.</h2>
+      <p class="section-sub">Joe'sSync is free software. Download and start syncing in minutes — no account, no cloud, no tracking.</p>
+      <div class="download-buttons">
+        <a href="/download/windows" class="btn btn-primary btn-lg">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
+          Download for Windows
+        </a>
+        <a href="/download/android" class="btn btn-outline btn-lg">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.341a.985.985 0 0 1-.99.98.985.985 0 0 1-.99-.98V9.25a.985.985 0 0 1 .99-.98.985.985 0 0 1 .99.98v6.091zm-10.06 0a.985.985 0 0 1-.99.98.985.985 0 0 1-.99-.98V9.25a.985.985 0 0 1 .99-.98.985.985 0 0 1 .99.98v6.091zm11.91-6.33c0-.017 0-.033-.002-.05a6.044 6.044 0 0 0-2.43-4.305l.98-1.75a.45.45 0 0 0-.78-.438l-.992 1.771a6.037 6.037 0 0 0-2.149-.56V4h.64V2.5h-3.28V4h.64v-.322a6.038 6.038 0 0 0-2.149.56L8.86 2.467a.45.45 0 0 0-.78.438l.979 1.75A6.044 6.044 0 0 0 6.63 9.011c-.002.017-.002.033-.002.05v8.47c0 .816.67 1.479 1.495 1.479H15.88c.825 0 1.495-.663 1.495-1.479V9.011z"/></svg>
+          Download for Android
+        </a>
+      </div>
+      <p class="download-note">Windows installer is signed. By downloading you agree to the <a href="/eula">End User License Agreement</a>.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo">Joe's<span class="accent">Sync</span>™</span>
+        <p class="footer-copy">© 2026 Joseph Wuest. All rights reserved.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="/eula">EULA</a>
+        <a href="/privacy">Privacy</a>
+        <a href="mailto:support@joessync.com">Support</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
